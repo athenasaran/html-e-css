@@ -1,13 +1,14 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-.container-principal{
+.container-principal {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#777;
+    color: #777;
 }
-header{
+
+header {
     width: 100%;
     height: 100px;
     background-color: #fff;
@@ -15,60 +16,63 @@ header{
     top: 0;
 }
 
-.logo{
+.logo {
     position: absolute;
     width: 300px;
     height: auto;
 }
 
-.logo img{
+.logo img {
     width: 90%;
     margin-left: 10%;
 }
+
 /* definir as propriedades do menu*/
-nav{
+nav {
     position: absolute;
     right: 30px;
     bottom: 0px;
 }
-nav ul li{
+
+nav ul li {
     float: left;
-    color:#fff;
+    color: #fff;
     width: auto;
-    margin:0.8em;
+    margin: 0.8em;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color:#bbb;
+    color: #bbb;
 }
 
-nav ul li a:hover{
-    color:#b13030;
+nav ul li a:hover {
+    color: #b13030;
 }
 
 /* definir as propriedades da imagem principal*/
 
-#banner{
+#banner {
     width: 100%;
 }
-#banner img{
+
+#banner img {
     width: 100%;
     margin-bottom: 0;
 }
 
 /* definir as propriedade dos pop'ups*/
-.modalDialog{
+.modalDialog {
     position: fixed;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    top:0;
+    top: 0;
     right: 0;
-    bottom:0;
+    bottom: 0;
     left: 0;
-    background: rgba(181,9,9,0.8);
+    background: rgba(181, 9, 9, 0.8);
     z-index: 9999;
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
@@ -78,13 +82,13 @@ nav ul li a:hover{
     display: none;
 }
 
-.modalDialog:target{
+.modalDialog:target {
     display: block;
     opacity: 1;
     pointer-events: auto;
 }
 
-.modalDialog div{
+.modalDialog div {
     width: 500px;
     position: relative;
     margin: 10% auto;
@@ -100,15 +104,15 @@ nav ul li a:hover{
     margin-bottom: 5%;
 }
 
-.modalDialog img{
+.modalDialog img {
     width: 50%;
     position: relative;
-    margin-left: 25%;    
+    margin-left: 25%;
 }
 
-.close{
+.close {
     background-color: #606061;
-    color:#ffffff;
+    color: #ffffff;
     line-height: 25px;
     position: absolute;
     right: -12px;
@@ -122,6 +126,27 @@ nav ul li a:hover{
     border-radius: 12px;
 }
 
-.close:hover{
+.close:hover {
     background-color: #b50909;
+}
+
+footer {
+    width: 100%;
+    height: 18%;
+    background-color: #b50909;
+    color: #fff;
+    position: relative;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer .footer-text{
+    width: 30%;
+    margin: 1%;
+    position: relative;
+    float: left;
+}
+
+footer .footer-text a {
+    color: #fff;
 }
